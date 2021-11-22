@@ -1,0 +1,21 @@
+body{
+    background: #E7A83B;
+}
+div{
+    margin-top: 2%;
+    width: 40%;
+    margin: auto;
+    border: 2px solid #006105;
+    border-radius: 5px;
+    text-align: center;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #006105;
+}
+p{
+    color: #08890F;
+}
+.miparrafo{
+    font-style: italic;
+}
