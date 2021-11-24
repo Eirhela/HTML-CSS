@@ -1,0 +1,23 @@
+html{
+    background-color: #fff;
+}
+body{
+    text-align: center;
+    margin-top: 5%;
+}
+p{
+    color: #E82A31;
+    font-size: 12px;
+}
+.miparrafo{
+    color: #F4702D;
+    font-size: 14px;
+}
+div p{
+    color: #F7FA00;
+    font-size: 16px;
+}
+div .miparrafo{
+    color: #09690F;
+    font-size: 18px;
+}
