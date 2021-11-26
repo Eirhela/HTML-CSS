@@ -1,0 +1,29 @@
+@font-face {
+    font-family: heaters;
+    src: url(heaters/Heaters.otf);
+}
+html, body{
+margin: 0;
+padding: 0;
+}
+body{
+    background-image: url(oceano.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#Titulo{
+    font-family: Heaters;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 10%;
+    color: #6400f0;
+}
+#botones{
+    margin-top: 5%;
+    margin-left: 38%;
+}
+#botones button{
+    background-color: rgba(100,0,240,0.41220238095238093);
+    border: 1px solid blue;
+}
