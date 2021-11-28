@@ -1,0 +1,42 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F5D8B2;
+}
+.Principal{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.cuadrado1{
+    width: 200px;
+    height: 200px;
+    background-color:#C0448F;
+    transition: all 3s ease;
+    margin-right: 100px;
+}
+.cuadrado2{
+    width: 200px;
+    height: 200px;
+    background-color:#b9ff46;
+    transition: all 2s ease;
+    opacity: 1;
+}
+.cuadrado1:hover{
+    width: 200px;
+    height: 200px;
+    transition: all 2s ease;
+    transform: rotate(360deg);
+}
+.cuadrado2:hover{
+    width: 150px;
+    height: 150px;
+    transition: all 2s ease;
+    transform: translate(100px);
+    opacity: 0;
+}
