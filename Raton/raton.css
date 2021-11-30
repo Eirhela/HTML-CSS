@@ -1,0 +1,55 @@
+body{
+    background-image: url(image.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.caja 
+{
+  animation: ratoncito 5s ease-in-out forwards;
+  margin-top: 35%;
+}
+
+.raton {
+  width: 160px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: 160px 120px;
+  z-index: 12;
+}
+
+.rata {
+  animation: correr 6s cubic-bezier(.60,.62,.43,.94) forwards;
+  margin-top: 20px;
+}
+
+  .rata div {
+    background-image: url(raton.png);
+    animation: salto 0.2s infinite;
+  }
+
+@keyframes correr {
+  100% {transform: translate(100%);}
+}
+
+  @keyframes salto {
+    0% {transform: rotate(-15deg);}
+    50% {transform: rotate(15deg);}
+    100% {transform: rotate(-15deg);}
+  }
+
+
+  @keyframes ratoncito {
+    0% {opacity:1;}
+    10% {opacity:0.9;}
+    15% {opacity:0.8;}
+    20% {opacity:0.8;}
+    25% {opacity:0.8;}
+    30% {opacity:0.8;}
+    35% {opacity:0.8;}
+    40% {opacity:0.8;}
+    45% {opacity:0.8;}
+    50% {opacity:0;}
+    100% {opacity:0;}
+  }
