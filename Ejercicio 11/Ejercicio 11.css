@@ -1,0 +1,22 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e9d7c0;
+    margin-top: 10%;
+}
+.Primera{
+    width: 300px;
+    height: 200px;
+}
+
+.Segunda{
+    width: 300px;
+    height: 200px;
+}
+
+.Tercera{
+    width: 300px;
+    height: 200px;
+}
