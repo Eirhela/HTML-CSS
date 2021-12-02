@@ -1,0 +1,112 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Allerta Stencil';
+  font-weight: 600;
+  background-color: #fff;
+}
+
+.morphing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20%;
+  margin-right: 20%;
+  font-size: 50px;
+  color: #9B5BF3;
+  -webkit-filter: drop-shadow(16px 16px 30px #6C00FF);
+          filter: drop-shadow(16px 16px 30px #6C00FF);
+}
+
+.texto {
+  position: absolute;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  -webkit-animation: texto 15s infinite ease-in-out;
+          animation: texto 15s infinite ease-in-out;
+}
+
+:nth-child(1) {
+  -webkit-animation-delay: -15s;
+          animation-delay: -15s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+:nth-child(2) {
+  -webkit-animation-delay: -13.125s;
+          animation-delay: -13.125s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+:nth-child(3) {
+  -webkit-animation-delay: -11.25s;
+          animation-delay: -11.25s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+:nth-child(4) {
+  -webkit-animation-delay: -9.375s;
+          animation-delay: -9.375s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+:nth-child(5) {
+  -webkit-animation-delay: -7.5s;
+          animation-delay: -7.5s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+:nth-child(6) {
+  -webkit-animation-delay: -5.625s;
+          animation-delay: -5.625s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+:nth-child(7) {
+  -webkit-animation-delay: -3.75s;
+          animation-delay: -3.75s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@-webkit-keyframes texto {
+  0%, 5%, 100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+  20%, 80% {
+    -webkit-filter: blur(16px);
+            filter: blur(16px);
+    opacity: 0;
+  }
+}
+
+@keyframes texto {
+  0%, 5%, 100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+  20%, 80% {
+    -webkit-filter: blur(16px);
+            filter: blur(16px);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=proyecto.css.map */

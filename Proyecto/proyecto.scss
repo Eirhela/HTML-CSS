@@ -1,0 +1,46 @@
+@import "variables";
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Allerta Stencil';
+    font-weight: 600;
+    background-color: #fff;
+}
+.morphing{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 20%;
+    margin-right: 20%;
+    font-size: 50px;
+    color: #9B5BF3;
+    filter: drop-shadow(16px 16px 30px #6C00FF);
+   
+}
+.texto{
+    position: absolute;
+    transform: translate(50%, 50%);
+    animation: texto $velocidad infinite ease-in-out;
+}
+
+@for $i from 0 to $conteo{
+    &:nth-child(#{$i+1}){
+        animation-delay: ($velocidad / ($conteo +1) * $i) - $velocidad;
+        transition: 1s;
+    }
+}
+
+@keyframes texto{
+    0%, 5%, 100%{
+        filter: blur(0px); 
+        opacity: 1;
+    }
+    20%, 80%{
+        filter: blur(16px); 
+        opacity: 0;
+    }
+}
